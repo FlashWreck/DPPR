@@ -10,7 +10,7 @@ settings:
   font: "Courier" # Falls back to JetBrains Mono if installed
   font_bold: "Courier-Bold"
   page_size: "A4"
-  master_currency: "USD" # All financial modules will convert to this
+  master_currency: "USD" # All financial modules will convert to this currency
   qr_data: "https://yourwebsite.com"
   signature_path: "signature.png"
   printing:
@@ -117,12 +117,6 @@ layout:
   - module: "fact_of_the_day"
     title: "FACT OF THE DAY"
 
-  - module: "trending"
-    title: "TRENDING (Global)"
-    config:
-      country: "US"
-      count: 5
-
   - module: "shower_thoughts"
     title: "SHOWER THOUGHTS"
     config:
@@ -133,6 +127,14 @@ layout:
     title: "RECENT EMAILS"
     config:
       count: 3
+
+  - module: "gplay"
+    title: "APP STATS (Google Play)"
+    config:
+      package_name: "com.example.app"
+
+  - module: "essentials"
+    title: "REPORT REVIEW"
 
   - module: "quotes"
     config:
